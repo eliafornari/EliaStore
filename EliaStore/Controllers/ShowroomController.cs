@@ -10,7 +10,7 @@ namespace EliaStore.Controllers
 {
     public class ShowroomController : Controller
     {
-        dbcontext db = new dbcontext();
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Details(string brandname, string modelname, int year)
         {
             var showroom = new ShowroomViewModel();
